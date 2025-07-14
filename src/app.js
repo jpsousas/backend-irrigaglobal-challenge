@@ -1,8 +1,7 @@
-// src/app.js
-import express from "express"; // Importação default
-import authRoutes from "./auth/auth.routes.js"; // Importação default e com '.js'
-import pivotRoutes from "./pivots/pivot.routes.js"; // Importação default e com '.js'
-import irrigationRoutes from "./irrigations/irrigation.routes.js"; // Importação default e com '.js'
+import express from "express";
+import authRoutes from "./auth/auth.routes.js";
+import pivotRoutes from "./pivots/pivot.routes.js";
+import irrigationRoutes from "./irrigations/irrigation.routes.js";
 
 const app = express();
 const PORT = process.env.PORT || 3000;

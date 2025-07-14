@@ -1,6 +1,5 @@
-// src/pivots/pivot.service.js
-import { pivots } from "../data/inMemoryDB.js"; // Importação nomeada e com '.js'
-import { generateUUID } from "../utils/uuid.js"; // Importação nomeada e com '.js'
+import { pivots } from "../data/inMemoryDB.js";
+import { generateUUID } from "../utils/uuid.js";
 
 const getPivotsByUserId = (userId) => {
   return pivots.filter((pivot) => pivot.userId === userId);
@@ -48,12 +47,11 @@ const deletePivot = (pivotId, userId) => {
   if (pivotIndex === -1) {
     return false; // Pivô não encontrado ou não autorizado
   }
-  pivots.splice(pivotIndex, 1); // <--- ESTA É A LINHA CORRIGIDA
+  pivots.splice(pivotIndex, 1);
   return true; // Exclusão bem-sucedida
 };
 
 export {
-  // Usando 'export' nomeado
   getPivotsByUserId,
   getPivotById,
   createPivot,

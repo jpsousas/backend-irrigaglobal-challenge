@@ -1,8 +1,7 @@
-// src/auth/auth.service.js
-import { users } from "../data/inMemoryDB.js"; // Importação nomeada e com '.js'
-import { hashPassword, comparePassword } from "../utils/bcrypt.js"; // Importação nomeada e com '.js'
-import { generateToken } from "../utils/jwt.js"; // Importação nomeada e com '.js'
-import { generateUUID } from "../utils/uuid.js"; // Importação nomeada e com '.js'
+import { users } from "../data/inMemoryDB.js";
+import { hashPassword, comparePassword } from "../utils/bcrypt.js";
+import { generateToken } from "../utils/jwt.js";
+import { generateUUID } from "../utils/uuid.js";
 
 const registerUser = (username, password) => {
   if (!username || !password) {
@@ -33,8 +32,4 @@ const loginUser = (username, password) => {
   return token;
 };
 
-export {
-  // Usando 'export' nomeado
-  registerUser,
-  loginUser,
-};
+export { registerUser, loginUser };

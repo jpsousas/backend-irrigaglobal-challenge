@@ -1,4 +1,3 @@
-// src/auth/auth.middleware.js
 import { verifyToken } from "../utils/jwt.js"; // Importação nomeada e com '.js'
 
 const authenticateToken = (req, res, next) => {
@@ -18,4 +17,4 @@ const authenticateToken = (req, res, next) => {
   }
 };
 
-export default authenticateToken; // Usando 'export default' para o middleware
+export default authenticateToken;

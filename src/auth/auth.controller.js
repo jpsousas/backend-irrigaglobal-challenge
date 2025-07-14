@@ -1,4 +1,4 @@
-import { registerUser, loginUser } from "./auth.service.js"; // Importação nomeada e com '.js'
+import { registerUser, loginUser } from "./auth.service.js";
 
 const register = (req, res) => {
   try {

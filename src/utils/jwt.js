@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
 
-const JWT_SECRET = process.env.JWT_SECRET || "your_super_secret_jwt_key";
+const JWT_SECRET = process.env.JWT_SECRET || "chave_secreta";
 const JWT_EXPIRES_IN = "1h";
 
 const generateToken = (payload) => {

@@ -1,7 +1,6 @@
-// src/pivots/pivot.routes.js
 import express from "express";
-import * as pivotController from "./pivot.controller.js"; // Importa todas as exports nomeadas
-import authenticateToken from "../auth/auth.middleware.js"; // Importação default
+import * as pivotController from "./pivot.controller.js";
+import authenticateToken from "../auth/auth.middleware.js";
 
 const router = express.Router();
 
